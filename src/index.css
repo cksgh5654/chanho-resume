@@ -1,0 +1,51 @@
+@import "tailwindcss";
+:root {
+  --default-font-family: "Pretendard", sans-serif;
+}
+.chanho-toast-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.chanho-toast-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.chanho-toast-description {
+  font-size: 14px;
+  color: #666;
+}
+.chanho-breadcrumb-dropdown {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  margin-top: 30px;
+  margin-left: 32px;
+  z-index: 1000;
+  top: 0;
+}
+
+#current-date {
+  background-color: oklch(62.3% 0.214 259.815);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.chanho-calendar-date-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
