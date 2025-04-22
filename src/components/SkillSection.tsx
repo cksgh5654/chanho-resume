@@ -17,7 +17,7 @@ import npm from "../assets/icons/npm.svg";
 import react from "../assets/icons/react.svg";
 import tailwind from "../assets/icons/tailwind.svg";
 import typescript from "../assets/icons/typescript.svg";
-import javascript from "../assets/icons/javascript.svg";
+import javascript from "../assets/icons/javascriptIcon.svg";
 import useDevice from "../hooks/useDevice";
 
 interface SkillLocation {
