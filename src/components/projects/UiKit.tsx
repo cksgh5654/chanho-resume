@@ -385,7 +385,7 @@ const Uikit = () => {
                 className="group"
               >
                 <CarouselXscroll.ItemContainer>
-                  <CarouselXscroll.Items className="flex gap-4 translate-x-8">
+                  <CarouselXscroll.Items className="flex gap-4 translate-x-[-50px]">
                     <div className="bg-blue-400 w-56 h-56 flex justify-center items-center text-white text-4xl rounded-xl">
                       1
                     </div>
@@ -467,20 +467,6 @@ const Uikit = () => {
               ref={baseRef}
               className="text-3xl font-semibold text-slate-700 pb-8"
             >
-              Popover
-            </h4>
-            <Popover position="bottom-left">
-              <Popover.Trigger>팝오버 열기</Popover.Trigger>
-              <Popover.Content className="bg-white p-4 rounded-lg shadow-lg mt-4">
-                팝오버 컨텐츠를 넣을 자리
-              </Popover.Content>
-            </Popover>
-          </li>
-          <li className="px-8">
-            <h4
-              ref={baseRef}
-              className="text-3xl font-semibold text-slate-700 pb-8"
-            >
               Select
             </h4>
 
@@ -489,11 +475,14 @@ const Uikit = () => {
               value={selectedValue}
               item={selectedItem}
               setItem={setSelectedItem}
+              selectId="my-popover"
             >
               <Select.Trigger />
-              <Select.Content className="flex flex-col gap-2 bg-white p-4 rounded-lg shadow-lg mt-4">
-                <Select.Item value={"item 1"}>선택한 아이템 1</Select.Item>
-                <Select.Item value={"item 2"}>선택한 아이템 2</Select.Item>
+              <Select.Content className="bg-white p-4 rounded-lg shadow-lg mt-4">
+                <div className="flex flex-col gap-2">
+                  <Select.Item value="item 1">선택한 아이템 1</Select.Item>
+                  <Select.Item value="item 2">선택한 아이템 2</Select.Item>
+                </div>
               </Select.Content>
             </Select>
           </li>
