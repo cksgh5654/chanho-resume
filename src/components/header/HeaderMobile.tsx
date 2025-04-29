@@ -49,7 +49,7 @@ const HeaderMobile = () => {
   }, [isOpen]);
 
   return (
-    <header className="border-b bg-white border-gray-200 z-50 sticky top-0 left-0">
+    <header className="border-b bg-white border-gray-200 z-50 sticky top-0 left-0 overflow-x-hidden">
       <div className="flex items-center justify-center py-2">
         <div className="w-full flex items-center justify-center pl-14">
           <Logo className="h-4" />

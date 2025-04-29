@@ -14,6 +14,13 @@ const HeaderDesktopAndTablet = () => {
     }
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const scrollToBasicInformation = () => {
     const section = document.getElementById("basic-information");
     if (section) {
@@ -26,13 +33,6 @@ const HeaderDesktopAndTablet = () => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
   };
 
   const scrollToProject = () => {
