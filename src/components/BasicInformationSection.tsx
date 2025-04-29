@@ -48,7 +48,7 @@ const BasicInformationSection = () => {
       <div className="w-full grid grid-rows-[712px_308px_228px] px-4 md:grid-cols-2 md:grid-rows-[392px_308px] gap-4 max-w-[1440px] md:px-8">
         <div className="md:col-span-2 grid md:grid-cols-[1fr_1fr] gap-8 w-full bg-slate-100 p-8 rounded-2xl">
           <div className="flex justify-center items-center">
-            <div className="w-[328px] h-[328px] flex items-end justify-center bg-white rounded-full overflow-hidden">
+            <div className="w-full h-[328px] flex items-end justify-center bg-white rounded-full overflow-hidden">
               <img src={profileImg} alt="박찬호" className="h-[300px]" />
             </div>
           </div>
