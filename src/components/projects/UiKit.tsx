@@ -9,7 +9,6 @@ import {
   CarouselInfinite,
   CarouselXscroll,
   Pagination,
-  Popover,
   Select,
   Tabs,
   useToast,
