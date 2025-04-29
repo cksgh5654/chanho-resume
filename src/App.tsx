@@ -9,7 +9,7 @@ import SkillSection from "./components/SkillSection";
 
 function App() {
   return (
-    <>
+    <main className="overflow-x-hidden">
       <Header />
       <MainSection />
       <BasicInformationSection />
@@ -17,7 +17,7 @@ function App() {
       <ProjectSection />
       <CertificationEducation />
       <Footer />
-    </>
+    </main>
   );
 }
 
