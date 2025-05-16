@@ -73,10 +73,9 @@ const ProjectSection = () => {
       <CarouselInfinite className=" relative">
         <CarouselInfinite.ItemContainer>
           <CarouselInfinite.ItemList>
-            {projects.map((project, index) => {
+            {projects.map((project) => {
               return (
                 <CarouselInfinite.Item
-                  index={index}
                   key={project.title}
                   className={`w-full px-4 md:px-8 2xl:w-[1440px] ${aspectRatioClass}`}
                 >
