@@ -96,7 +96,7 @@ const ProjectSection = () => {
           {(handlePrev, handleNext, isTransitioning) => (
             <>
               <button
-                className="bg-[rgba(0,0,0,0.5)] rounded-full opacity-50 hover:opacity-100 duration-300 ease-in-out backdrop-blur-sm p-2"
+                className="bg-[rgba(0,0,0,0.5)] rounded-full opacity-50 hover:opacity-100 duration-300 ease-in-out backdrop-blur-sm p-2 cursor-pointer"
                 onClick={handlePrev}
                 disabled={isTransitioning}
               >
@@ -104,7 +104,7 @@ const ProjectSection = () => {
               </button>
 
               <button
-                className="bg-[rgba(0,0,0,0.5)] rounded-full opacity-50 hover:opacity-100 duration-300 ease-in-out backdrop-blur-sm p-2"
+                className="bg-[rgba(0,0,0,0.5)] rounded-full opacity-50 hover:opacity-100 duration-300 ease-in-out backdrop-blur-sm p-2 cursor-pointer"
                 onClick={handleNext}
                 disabled={isTransitioning}
               >

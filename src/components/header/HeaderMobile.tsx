@@ -6,9 +6,9 @@ import EllipsesIcon from "../../assets/icons/MenuIcon";
 import CloseIcon from "../../assets/icons/CloseIcon";
 
 const MENU_ITEMS = [
+  { label: "프로젝트", sectionId: "project" },
   { label: "이력", sectionId: "basic-information" },
   { label: "보유 기술 스택", sectionId: "skill-stack" },
-  { label: "프로젝트", sectionId: "project" },
   { label: "교육&자격증", sectionId: "education" },
 ];
 
@@ -48,12 +48,15 @@ const HeaderMobile = () => {
   return (
     <header className="border-b bg-white border-gray-200 z-50 sticky top-0 left-0 overflow-x-hidden">
       <div className="flex items-center justify-center py-2">
-        <div className="w-full flex items-center justify-center pl-14">
+        <button
+          onClick={() => scrollToSection("project")}
+          className="w-full flex items-center justify-center pl-14 cursor-pointer"
+        >
           <Logo className="h-4" />
-        </div>
+        </button>
         <button
           onClick={toggleMenu}
-          className="flex items-center justify-center gap-4 px-4"
+          className="flex items-center justify-center gap-4 px-4 cursor-pointer"
         >
           <EllipsesIcon className="h-8" />
         </button>
@@ -66,10 +69,13 @@ const HeaderMobile = () => {
       >
         <div className="flex flex-col items-center justify-center">
           <div className="w-full flex items-center justify-center py-2 border-b border-gray-200">
-            <div className="flex items-center justify-center w-full pl-14">
+            <button
+              onClick={() => scrollToSection("project")}
+              className="flex items-center justify-center w-full pl-14 cursor-pointer"
+            >
               <Logo className="h-4" />
-            </div>
-            <button onClick={closeMenu}>
+            </button>
+            <button onClick={closeMenu} className="cursor-pointer">
               <CloseIcon className="h-8" />
             </button>
           </div>
@@ -77,16 +83,16 @@ const HeaderMobile = () => {
             <button
               key={sectionId}
               onClick={() => scrollToSection(sectionId)}
-              className="w-full flex items-center py-4 text-gray-600 pl-8 border-b border-gray-200"
+              className="w-full flex items-center py-4 text-gray-600 pl-8 border-b border-gray-200 cursor-pointer"
             >
               {label}
             </button>
           ))}
           <div className="flex items-center justify-center gap-4 pt-16">
-            <a href="tel:+821023285654">
+            <a href="tel:+821023285654" className="cursor-pointer">
               <CallIcon className="w-6" />
             </a>
-            <a href="mailto:qkrcksgh5654@gmail.com">
+            <a href="mailto:qkrcksgh5654@gmail.com" className="cursor-pointer">
               <MailIcon className="w-6" />
             </a>
           </div>

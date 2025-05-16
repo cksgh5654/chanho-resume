@@ -60,11 +60,18 @@ const HeaderDesktopAndTablet = () => {
           }`}
         >
           <Logo
-            className={`transition-all duration-300 ease-in-out ${
+            onClick={scrollToProject}
+            className={`transition-all duration-300 ease-in-out cursor-pointer ${
               isScrolled ? "h-4" : "h-6"
             }`}
           />
           <ul className="w-full flex items-center justify-center gap-8 text-black/50">
+            <li
+              onClick={scrollToProject}
+              className="hover:font-bold hover:text-black cursor-pointer transition duration-200 ease-in-out"
+            >
+              프로젝트
+            </li>
             <li
               onClick={scrollToBasicInformation}
               className="hover:font-bold hover:text-black cursor-pointer transition duration-200 ease-in-out"
@@ -76,12 +83,6 @@ const HeaderDesktopAndTablet = () => {
               className="hover:font-bold hover:text-black cursor-pointer transition duration-200 ease-in-out"
             >
               보유 기술 스택
-            </li>
-            <li
-              onClick={scrollToProject}
-              className="hover:font-bold hover:text-black cursor-pointer transition duration-200 ease-in-out"
-            >
-              프로젝트
             </li>
             <li
               onClick={scrollToEducation}
