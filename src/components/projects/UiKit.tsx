@@ -301,7 +301,6 @@ const Uikit = () => {
               <CarouselInfinite.ItemContainer>
                 <CarouselInfinite.ItemList>
                   <CarouselInfinite.Item
-                    index={1}
                     key={1}
                     className={`w-full px-4 md:px-8 2xl:w-[700px]`}
                   >
@@ -312,7 +311,6 @@ const Uikit = () => {
                     )}
                   </CarouselInfinite.Item>
                   <CarouselInfinite.Item
-                    index={2}
                     key={2}
                     className={`w-full px-4 md:px-8 2xl:w-[700px]`}
                   >
@@ -323,7 +321,6 @@ const Uikit = () => {
                     )}
                   </CarouselInfinite.Item>
                   <CarouselInfinite.Item
-                    index={3}
                     key={3}
                     className={`w-full px-4 md:px-8 2xl:w-[700px]`}
                   >
