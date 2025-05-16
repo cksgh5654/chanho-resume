@@ -368,7 +368,8 @@ const Blahblah = () => {
               콘텐츠 노출이 필요했습니다.
             </p>
           </div>
-          <div className="flex flex-col gap-8">
+
+          <div className="grid grid-cols-1 xl:grid-cols-[2fr_1fr] gap-8">
             <figure className="flex relative flex-col gap-4 rounded-xl">
               <img
                 className="rounded-xl shadow-lg"
@@ -379,7 +380,7 @@ const Blahblah = () => {
                 검색 결과 페이지
               </figcaption>
             </figure>
-            <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 col-span-2">
+            <div className="flex flex-col xl:justify-center gap-8">
               <div className="flex flex-col gap-4">
                 <h5 className="text-2xl font-semibold text-slate-700">
                   일관된 UI 제공
@@ -398,16 +399,6 @@ const Blahblah = () => {
                   width 제한을 두지 않아 고해상도 화면에서 더 많은 검색 결과를
                   한눈에 볼 수 있도록 했습니다. 이를 통해 다양한 디바이스에서
                   일관된 경험을 제공했습니다.
-                </p>
-              </div>
-              <div className="flex flex-col gap-4">
-                <h5 className="text-2xl font-semibold text-slate-700">
-                  효율적인 데이터 로드
-                </h5>
-                <p className="text-slate-500">
-                  검색 결과를 페이지네이션 형태로 분할하여 한 번에 모든 데이터를
-                  로드하지 않고, 필요한 데이터만 로드하도록 설계했습니다. 이를
-                  통해 성능을 최적화하고 사용자 대기 시간을 줄였습니다.
                 </p>
               </div>
             </div>

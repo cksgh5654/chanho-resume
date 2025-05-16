@@ -11,10 +11,10 @@ function App() {
   return (
     <>
       <Header />
-      <MainSection />
+      <ProjectSection />
+      {/* <MainSection /> */}
       <BasicInformationSection />
       <SkillSection />
-      <ProjectSection />
       <CertificationEducation />
       <Footer />
     </>

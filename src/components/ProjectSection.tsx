@@ -53,7 +53,7 @@ const ProjectSection = () => {
       id="project"
       className="flex flex-col items-center w-full bg-slate-100 pb-32 relative"
     >
-      <div className="w-full max-w-[1440px]">
+      {/* <div className="w-full max-w-[1440px]">
         <div className="flex flex-col gap-8 px-4 md:px-8 pt-32 pb-8 bg-slate-100 rounded-2xl">
           <h1 className="text-5xl font-bold text-gray-800 leading-snug">
             화면을 가득 채운 경험
@@ -68,7 +68,7 @@ const ProjectSection = () => {
             사용자에게 몰입감 있는 경험을 제공하는 것이 목표였습니다.
           </p>
         </div>
-      </div>
+      </div> */}
 
       <CarouselInfinite className=" relative">
         <CarouselInfinite.ItemContainer>

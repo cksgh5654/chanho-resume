@@ -16,13 +16,10 @@ const HeaderMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  // 메뉴 열기/닫기 토글
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
-  // 메뉴 닫기
   const closeMenu = () => setIsOpen(false);
 
-  // 섹션으로 스크롤하고 메뉴 닫기
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
