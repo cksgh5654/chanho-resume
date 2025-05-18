@@ -1,6 +1,7 @@
-import { FC, useState } from "react";
+import { FC, useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import XIcon from "../assets/icons/XIcon";
-import Cinemahub from "./projects/Cimemahub";
+import Cinemahub from "./projects/Cinemahub";
 import Workplus from "./projects/Workplus";
 import Blahblah from "./projects/Blahblah";
 import { Modal } from "parkchanho-react-ui-kit";
@@ -11,6 +12,7 @@ interface ProjectsProps {
   logoImage: string;
   bgImage: string;
   carouselIndex: number;
+  isModalOpen?: boolean;
 }
 
 const Projects: FC<ProjectsProps> = ({
@@ -18,15 +20,28 @@ const Projects: FC<ProjectsProps> = ({
   logoImage,
   bgImage,
   carouselIndex,
+  isModalOpen = false,
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(isModalOpen);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === `/project/${title.toLowerCase()}`) {
+      setIsOpen(true);
+    } else {
+      setIsOpen(false);
+    }
+  }, [location.pathname, title]);
 
   const handleOpenModal = () => {
     setIsOpen(true);
+    navigate(`/project/${title.toLowerCase()}`);
   };
 
   const handleCloseModal = () => {
     setIsOpen(false);
+    navigate("/", { replace: true });
   };
 
   return (
