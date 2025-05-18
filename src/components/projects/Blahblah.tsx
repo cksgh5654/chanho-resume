@@ -76,14 +76,14 @@ const Blahblah = () => {
   return (
     <section ref={modalRef} className="pb-32">
       <div
-        className="flex items-end w-full bg-cover bg-left h-[640px] md:h-[720px] rounded-t-2xl"
+        className="flex justify-center md:justify-start items-end w-full bg-cover bg-left h-[640px] md:h-[720px] rounded-t-2xl"
         style={
           isMobile
             ? { backgroundImage: `url(${bgimgmobile})` }
             : { backgroundImage: `url(${bgimg})` }
         }
       >
-        <div className="flex flex-col gap-6 pl-12 pb-12 md:pl-24 md:pb-16">
+        <div className="flex flex-col items-center md:items-start gap-6 pb-12 md:pl-24 md:pb-16">
           <img src={logo} alt="blahblah logo" className="w-fit h-20 md:h-30" />
           <a
             href="https://blahblah.chanhoportfolio.com"
@@ -124,7 +124,7 @@ const Blahblah = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-12 pt-16 px-8">
+      <div className="flex flex-col gap-12 pt-16 px-4 md:px-8">
         <h3 className="text-4xl font-bold text-slate-700">기본 정보</h3>
         <dl className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
@@ -199,7 +199,7 @@ const Blahblah = () => {
           </div>
         </dl>
       </div>
-      <div className="flex flex-col gap-12 pt-32 px-8">
+      <div className="flex flex-col gap-12 pt-32 px-4 md:px-8">
         <h3 className="text-4xl font-bold text-slate-700">프로젝트 설명</h3>
         <p className="text-slate-500">
           블라블라는 사용자가 관심 주제에 따라 카테고리별 게시판을 생성하고,
@@ -210,7 +210,7 @@ const Blahblah = () => {
           참여하며 관심사를 자유롭게 공유하며 소통하는 공간을 제공합니다.
         </p>
       </div>
-      <div className="flex flex-col gap-16 pt-32 px-8">
+      <div className="flex flex-col gap-16 pt-32 px-4 md:px-8">
         <h3 className="text-4xl font-bold text-slate-700">담당 페이지</h3>
         <div className="w-full flex flex-col gap-8">
           <div className="flex flex-col gap-4">
@@ -274,7 +274,7 @@ const Blahblah = () => {
                   </figcaption>
                 </figure>
               </div>
-              <div className="flex flex-col px-8 justify-center gap-4 rounded-xl xl:pl-0 xl:pr-8 py-8">
+              <div className="flex flex-col px-4 md:px-8 justify-center gap-4 rounded-xl xl:pl-0 xl:pr-8 py-8">
                 <h5 className="text-2xl font-semibold text-slate-700">
                   유연한 UI 설계
                 </h5>
@@ -516,7 +516,7 @@ const Blahblah = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-12 pt-32 px-8">
+      <div className="flex flex-col gap-12 pt-32 px-4 md:px-8">
         <h3 className="text-4xl font-bold text-slate-700">시연 영상</h3>
         <iframe
           className="w-full aspect-video rounded-lg shadow-lg"
@@ -526,7 +526,7 @@ const Blahblah = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <div className="flex flex-col gap-12 pt-32 px-8">
+      <div className="flex flex-col gap-12 pt-32 px-4 md:px-8">
         <h3 ref={baseRef} className="text-4xl font-bold text-slate-700">
           페이지
         </h3>

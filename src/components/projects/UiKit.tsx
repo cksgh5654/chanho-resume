@@ -120,14 +120,14 @@ const Uikit = () => {
   return (
     <section ref={modalRef} className="pb-32">
       <div
-        className="flex items-end w-full bg-cover bg-left h-[640px] md:h-[720px] rounded-t-2xl"
+        className="flex justify-center md:justify-start items-end w-full bg-cover bg-left h-[640px] md:h-[720px] rounded-t-2xl"
         style={
           isMobile
             ? { backgroundImage: `url(${bgimgmobile})` }
             : { backgroundImage: `url(${bgimg})` }
         }
       >
-        <div className="flex flex-col gap-6 pl-12 pb-12 md:pl-24 md:pb-16">
+        <div className="flex flex-col items-center md:items-start gap-6 pb-12 md:pl-24 md:pb-16">
           <img src={logo} alt="cinemahub logo" className="h-14 md:h-28" />
           <a
             href="https://github.com/cksgh5654/react-ui-kit"
@@ -139,7 +139,7 @@ const Uikit = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col gap-12 pt-16 px-8">
+      <div className="flex flex-col gap-12 pt-16 px-4 md:px-8">
         <h3 className="text-4xl font-bold text-slate-700">기본 정보</h3>
         <dl className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
@@ -173,7 +173,7 @@ const Uikit = () => {
           </div>
         </dl>
       </div>
-      <div className="flex flex-col gap-12 pt-32 px-8">
+      <div className="flex flex-col gap-12 pt-32 px-4 md:px-8">
         <h3 className="text-4xl font-bold text-slate-700">프로젝트 설명</h3>
         <p className="text-slate-500">
           리엑트 프로젝트에서 사용하는 공통 컴포넌트로 스타일이 없는 headless ui
@@ -196,9 +196,9 @@ const Uikit = () => {
       </div>
 
       <div className="flex flex-col gap-12 pt-32">
-        <h3 className="text-4xl font-bold text-slate-700 px-8">예시</h3>
+        <h3 className="text-4xl font-bold text-slate-700 px-4 md:px-8">예시</h3>
         <ul className="flex flex-col gap-16">
-          <li className="px-8">
+          <li className="px-4 md:px-8">
             <h4 className="text-3xl font-semibold text-slate-700 pb-8">
               Accordion
             </h4>
@@ -247,7 +247,7 @@ const Uikit = () => {
               </Accordion.Item>
             </Accordion>
           </li>
-          <li className="px-8">
+          <li className="px-4 md:px-8">
             <h4 className="text-3xl font-semibold text-slate-700 pb-4">
               Breadcrumb
             </h4>
@@ -277,7 +277,7 @@ const Uikit = () => {
               * 브래드크럼 예시 버튼을 누르면 url이 변경되어 모달창이 꺼집니다.
             </p>
           </li>
-          <li className="px-8">
+          <li className="px-4 md:px-8">
             <h4 className="text-3xl font-semibold text-slate-700 pb-4">
               Calendar
             </h4>
@@ -294,7 +294,7 @@ const Uikit = () => {
             </Calendar>
           </li>
           <li>
-            <h4 className="text-3xl font-semibold text-slate-700 pb-4 px-8">
+            <h4 className="text-3xl font-semibold text-slate-700 pb-4 px-4 md:px-8">
               CarouselInfinite
             </h4>
             <CarouselInfinite className="relative">
@@ -370,7 +370,7 @@ const Uikit = () => {
             <ul>
               <h4
                 ref={baseRef}
-                className="text-3xl font-semibold text-slate-700 pb-4 px-8"
+                className="text-3xl font-semibold text-slate-700 pb-4 px-4 md:px-8"
               >
                 CarouselXscroll
               </h4>
@@ -430,7 +430,7 @@ const Uikit = () => {
               </CarouselXscroll>
             </ul>
           </li>
-          <li className="px-8">
+          <li className="px-4 md:px-8">
             <h4
               ref={baseRef}
               className="text-3xl font-semibold text-slate-700 pb-8"
@@ -458,7 +458,7 @@ const Uikit = () => {
               </Pagination.Navigator>
             </Pagination>
           </li>
-          <li className="px-8">
+          <li className="px-4 md:px-8">
             <h4
               ref={baseRef}
               className="text-3xl font-semibold text-slate-700 pb-8"
@@ -482,7 +482,7 @@ const Uikit = () => {
               </Select.Content>
             </Select>
           </li>
-          <li className="px-8">
+          <li className="px-4 md:px-8">
             <h4
               ref={baseRef}
               className="text-3xl font-semibold text-slate-700  pb-8"
@@ -531,7 +531,7 @@ const Uikit = () => {
               </Tabs.Pannel>
             </Tabs>
           </li>
-          <li className="px-8">
+          <li className="px-4 md:px-8">
             <h4
               ref={baseRef}
               className="text-3xl font-semibold text-slate-700  pb-8"

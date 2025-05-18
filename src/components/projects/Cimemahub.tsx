@@ -76,14 +76,14 @@ const Cinemahub = () => {
   return (
     <section ref={modalRef} className="pb-32">
       <div
-        className="flex items-end w-full bg-cover bg-left h-[640px] md:h-[720px] rounded-t-2xl"
+        className="flex justify-center md:justify-start items-end w-full bg-cover bg-left h-[640px] md:h-[720px] rounded-t-2xl"
         style={
           isMobile
             ? { backgroundImage: `url(${bgimgmobile})` }
             : { backgroundImage: `url(${bgimg})` }
         }
       >
-        <div className="flex flex-col gap-6 pl-12 pb-12 md:pl-24 md:pb-16">
+        <div className="flex items-center md:items-start flex-col gap-6 pb-12 md:pl-24 md:pb-16">
           <img src={logo} alt="cinemahub logo" className="h-20 md:h-30" />
           <a
             href="https://cinemahub.chanhoportfolio.com"
@@ -115,7 +115,7 @@ const Cinemahub = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-12 pt-16 px-8">
+      <div className="flex flex-col gap-12 pt-16 px-4 md:px-8">
         <h3 className="text-4xl font-bold text-slate-700">기본 정보</h3>
         <dl className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
@@ -194,7 +194,7 @@ const Cinemahub = () => {
           </div>
         </dl>
       </div>
-      <div className="flex flex-col gap-12 pt-32 px-8">
+      <div className="flex flex-col gap-12 pt-32 px-4 md:px-8">
         <h3 className="text-4xl font-bold text-slate-700">프로젝트 설명</h3>
         <p className="text-slate-500">
           다양한 국가의 트랜드 영화와 영화인의 정보를 확인할 수 있고 영화의
@@ -203,7 +203,7 @@ const Cinemahub = () => {
           공유하는 공간으로 만들고자 했습니다.
         </p>
       </div>
-      <div className="flex flex-col gap-16 pt-32 px-8">
+      <div className="flex flex-col gap-16 pt-32 px-4 md:px-8">
         <h3 className="text-4xl font-bold text-slate-700">담당 페이지</h3>
         <div className="w-full flex flex-col gap-8">
           <div className="flex flex-col gap-4">
@@ -413,7 +413,7 @@ const Cinemahub = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-12 pt-32 px-8">
+      <div className="flex flex-col gap-12 pt-32 px-4 md:px-8">
         <h3 className="text-4xl font-bold text-slate-700">시연 영상</h3>
         <iframe
           className="w-full aspect-video rounded-lg"
@@ -423,7 +423,7 @@ const Cinemahub = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <div className="flex flex-col gap-12 pt-32 px-8">
+      <div className="flex flex-col gap-12 pt-32 px-4 md:px-8">
         <h3 ref={baseRef} className="text-4xl font-bold text-slate-700">
           페이지
         </h3>

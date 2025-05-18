@@ -1,8 +1,6 @@
 import GithubLogo from "../assets/icons/GithubLogo";
-import PdfLogo from "../assets/icons/PdfLogo";
 import profileImg from "../assets/images/profile.png";
 import useDevice from "../hooks/useDevice";
-import pdf from "../assets/parkchanho.pdf";
 import illustrator from "../assets/icons/adobe illustrator.svg";
 import photoshop from "../assets/icons/adobe photoshop.svg";
 import premiere from "../assets/icons/adobe premiere.svg";
@@ -10,6 +8,7 @@ import xd from "../assets/icons/adobe xd.svg";
 import nameIcon from "../assets/icons/name.svg";
 import callIcon from "../assets/icons/call.svg";
 import mailIcon from "../assets/icons/mail.svg";
+import NotionLogo from "../assets/icons/NotionLogo";
 
 const BasicInformationSection = () => {
   const { isDesktop, isDesktopLg, isDesktopXl, isDesktop2xl, isTablet } =
@@ -74,18 +73,23 @@ const BasicInformationSection = () => {
                 <dd>010-2328-5654</dd>
               </div>
             </dl>
-            <li className="flex">
+            <li className="flex items-center">
               <ul>
                 <a
                   href="https://github.com/cksgh5654?tab=repositories"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <GithubLogo className="h-10" />
                 </a>
               </ul>
               <ul>
-                <a href={pdf} download="박찬호_이력서.pdf">
-                  <PdfLogo className="h-10" />
+                <a
+                  href="https://catkin-form-486.notion.site/UI-UX-1a22ee14f61580a09577d9509b8e57a5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <NotionLogo className="h-9" />
                 </a>
               </ul>
             </li>
