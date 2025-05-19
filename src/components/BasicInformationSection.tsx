@@ -36,12 +36,14 @@ const BasicInformationSection = () => {
           이러한 경험을 통해 프론트엔드 개발에 대한 흥미가 생겼고, 프론트엔드
           개발자로 성장하기 위해 부트캠프를 통해 React와 TypeScript를 활용한 웹
           애플리케이션 개발 역량을 쌓았습니다.
-          {(isDesktop || isDesktopLg) && <br />} 저는 도전적이고 창의적인 성향을
-          가지고 있어 새로운 기술 트렌드에 민첩하게 적응하려고 노력하며, 사용자
-          중심의 솔루션을 설계하는 데 큰 관심을 가지고 있습니다.
-          {(isDesktopXl || isDesktop2xl) && <br />}디테일에 집중하면서도 큰
-          그림을 놓치지 않는 균형 잡힌 접근을 추구합니다. 협업에서는 열린
-          마음으로 의견을 나누고, 팀의 목표를 위해 주도적으로 기여합니다.
+          {(isDesktop || isDesktopLg) && <br />}도전적이고 창의적인 성향을
+          바탕으로 새로운 기술 트렌드에 빠르게 적응하며, 사용자 중심의 UI/UX를
+          구현하는 데 큰 열정을 가지고 있습니다.
+          {(isDesktopXl || isDesktop2xl) && <br />}세부사항에 주의를
+          기울이면서도 전체적인 방향성을 놓치지 않는 균형 잡힌 접근을
+          추구합니다.{(isDesktopXl || isDesktop2xl) && <br />} 협업 과정에서는
+          열린 자세로 의견을 나누고, 팀의 목표 달성을 위해 주도적으로
+          기여하겠습니다.
         </p>
       </div>
       <div className="w-full grid grid-rows-[712px_308px_228px] px-4 md:grid-cols-2 md:grid-rows-[392px_308px] gap-4 max-w-[1440px] md:px-8">
