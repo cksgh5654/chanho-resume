@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.17",
-    "parkchanho-react-ui-kit": "^0.1.254",
+    "parkchanho-react-ui-kit": "^0.1.259",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.6.0",

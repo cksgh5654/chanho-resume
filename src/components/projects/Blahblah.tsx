@@ -526,9 +526,12 @@ const Blahblah = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <div className="flex flex-col gap-12 pt-32 px-4 md:px-8">
-        <h3 ref={baseRef} className="text-4xl font-bold text-slate-700">
-          페이지
+      <div className="flex flex-col gap-12 pt-32">
+        <h3
+          ref={baseRef}
+          className="text-4xl font-bold text-slate-700 translate-x-4 md:translate-x-8"
+        >
+          전체 페이지
         </h3>
         <CarouselXscroll
           baseRect={baseRect}

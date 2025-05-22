@@ -69,7 +69,7 @@ const Projects: FC<ProjectsProps> = ({
           </Modal.Trigger>
           <Modal.Content className="z-2 md:my-[128px] top-0 w-full md:w-[90%] max-w-[1280px] bg-white md:rounded-2xl">
             <Modal.Close>
-              <XIcon className="z-3 sticky md:fixed top-4 translate-x-[calc(100vw-64px)] md:translate-x-[calc(90vw-64px)] w-12 cursor-pointer" />
+              <XIcon className="z-3 sticky md:fixed top-4 translate-x-[calc(100vw-64px)] md:translate-x-0 md:right-4 w-12 cursor-pointer" />
             </Modal.Close>
             {carouselIndex === 1 ? (
               <Cinemahub />

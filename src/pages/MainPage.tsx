@@ -1,8 +1,8 @@
-import "./App.css";
-import BasicInformationSection from "./components/BasicInformationSection";
-import CertificationEducation from "./components/CertificationEducation";
-import ProjectSection from "./components/ProjectSection";
-import SkillSection from "./components/SkillSection";
+import "../App.css";
+import BasicInformationSection from "../components/BasicInformationSection";
+import CertificationEducation from "../components/CertificationEducation";
+import ProjectSection from "../components/ProjectSection";
+import SkillSection from "../components/SkillSection";
 
 interface MainPageProps {
   initialProject?: string;
