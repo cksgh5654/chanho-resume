@@ -251,28 +251,16 @@ const Uikit = () => {
             <h4 className="text-3xl font-semibold text-slate-700 pb-4">
               Breadcrumb
             </h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="flex flex-col gap-2 bg-slate-100 p-4 rounded-lg">
-                <p className="text-slate-400">width가 초과 안되었을 때</p>
-                <Breadcrumb width="300px">
-                  <Breadcrumb.Item href="/a">1</Breadcrumb.Item>
-                  <Breadcrumb.Item href="/a-a">2</Breadcrumb.Item>
-                  <Breadcrumb.Item href="/a-a-a">3</Breadcrumb.Item>
-                  <Breadcrumb.Item href="/a-a-a-a">4</Breadcrumb.Item>
-                  <Breadcrumb.Item href="/a-a-a-a-a">5</Breadcrumb.Item>
-                </Breadcrumb>
-              </div>
-              <div className="flex flex-col gap-2 bg-slate-100 p-4 rounded-lg">
-                <p className="text-slate-400">width가 초과 되었을 때</p>
-                <Breadcrumb width="100px">
-                  <Breadcrumb.Item href="/a">1</Breadcrumb.Item>
-                  <Breadcrumb.Item href="/a-a">2</Breadcrumb.Item>
-                  <Breadcrumb.Item href="/a-a-a">3</Breadcrumb.Item>
-                  <Breadcrumb.Item href="/a-a-a-a">4</Breadcrumb.Item>
-                  <Breadcrumb.Item href="/a-a-a-a-a">5</Breadcrumb.Item>
-                </Breadcrumb>
-              </div>
+            <div className="flex gap-2 bg-slate-100 p-4 rounded-lg">
+              <Breadcrumb width="300px">
+                <Breadcrumb.Item href="/a">1</Breadcrumb.Item>
+                <Breadcrumb.Item href="/a-a">2</Breadcrumb.Item>
+                <Breadcrumb.Item href="/a-a-a">3</Breadcrumb.Item>
+                <Breadcrumb.Item href="/a-a-a-a">4</Breadcrumb.Item>
+                <Breadcrumb.Item href="/a-a-a-a-a">5</Breadcrumb.Item>
+              </Breadcrumb>
             </div>
+
             <p className="text-red-300 text-sm pt-2">
               * 브래드크럼 예시 버튼을 누르면 url이 변경되어 모달창이 꺼집니다.
             </p>
@@ -360,6 +348,7 @@ const Uikit = () => {
               </CarouselInfinite.Navigator>
 
               <CarouselInfinite.Indicator
+                className="pt-4"
                 styleType="dots"
                 dotSize={16}
                 activeColor="oklch(62.3% 0.214 259.815)"
