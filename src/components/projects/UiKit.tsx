@@ -56,7 +56,16 @@ const Uikit = () => {
   };
 
   const handleChangeTab = (index: number) => {
-    console.log(`Tab changed to index: ${index}`);
+    toast(
+      {
+        title: `${index}로 변경`,
+        description: "Tabs에 onChangeTab에 실행시킬 함수 예시입니다.",
+        duration: 3000,
+      },
+      {
+        position: "top-center",
+      }
+    );
   };
 
   const calculateBaseDivRect = () => {
@@ -187,7 +196,7 @@ const Uikit = () => {
             onKeyDown={(e) => e.key === "Enter" && handleCopy()}
             role="button"
             tabIndex={0}
-            className="text-blue-600 hover:text-blue-800"
+            className="text-blue-600 hover:text-blue-800 hover:cursor-pointer"
           >
             npm i parkchanho-react-ui-kit
           </span>{" "}
@@ -325,14 +334,14 @@ const Uikit = () => {
                 {(handlePrev, handleNext, isTransitioning) => (
                   <div className="w-full flex justify-between items-center px-8">
                     <button
-                      className="bg-[rgba(255,255,255,0.5)] rounded-full opacity-50 hover:opacity-100 duration-300 ease-in-out backdrop-blur-sm p-2"
+                      className="bg-[rgba(255,255,255,0.5)] rounded-full opacity-50 hover:opacity-100 duration-300 ease-in-out backdrop-blur-sm p-2 hover:cursor-pointer"
                       onClick={handlePrev}
                       disabled={isTransitioning}
                     >
                       <ChevronIcon height="40px" color="#000" thickness="3" />
                     </button>
                     <button
-                      className="bg-[rgba(255,255,255,0.5)] rounded-full opacity-50 hover:opacity-100 duration-300 ease-in-out backdrop-blur-sm p-2"
+                      className="bg-[rgba(255,255,255,0.5)] rounded-full opacity-50 hover:opacity-100 duration-300 ease-in-out backdrop-blur-sm p-2 hover:cursor-pointer"
                       onClick={handleNext}
                       disabled={isTransitioning}
                     >
@@ -530,7 +539,7 @@ const Uikit = () => {
             <button
               type="button"
               onClick={handleToast}
-              className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition duration-300 ease-in-out"
+              className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition duration-300 ease-in-out hover:cursor-pointer"
             >
               토스트 띄우기
             </button>
