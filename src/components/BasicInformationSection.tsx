@@ -27,8 +27,8 @@ const BasicInformationSection = () => {
         </h1>
         <p className="text-lg text-gray-700">
           안녕하세요 웹디자인 경험을 바탕으로 UI/UX에 강한 프론트엔드 개발자로
-          성장하고자 하는 박찬호입니다.&nbsp;
-          {(isDesktop || isTablet) && <br />}
+          성장하고자 하는 박찬호입니다.
+          {isDesktop && <br />}
           저는 4년 6개월 동안 병원 광고대행사에서 웹 기획 및 디자인하며 보다
           직관적이고 사용하기 편리한 웹사이트를 만드는 것에 관심을
           가져왔습니다.&nbsp;
@@ -39,11 +39,13 @@ const BasicInformationSection = () => {
           {(isDesktop || isDesktopLg) && <br />}도전적이고 창의적인 성향을
           바탕으로 새로운 기술 트렌드에 빠르게 적응하며, 사용자 중심의 UI/UX를
           구현하는 데 큰 열정을 가지고 있습니다.
-          {(isDesktopXl || isDesktop2xl) && <br />}세부사항에 주의를
-          기울이면서도 전체적인 방향성을 놓치지 않는 균형 잡힌 접근을
-          추구합니다.{(isDesktopXl || isDesktop2xl) && <br />} 협업 과정에서는
-          열린 자세로 의견을 나누고, 팀의 목표 달성을 위해 주도적으로
-          기여하겠습니다.
+          {(isDesktopXl || isDesktop2xl) && <br />}저는 변화에 유연하게 대응하고
+          새로운 기술을 배우는 데 주저함이 없으며, 사용자 중심의 UI/UX 구현에
+          강한 열정을 가지고 있습니다. {(isDesktopXl || isDesktop2xl) && <br />}{" "}
+          협업 시 다양한 관점을 존중하며 열린 자세로 소통하고, 팀의 목표 달성을
+          위해 책임감 있게 기여합니다. {(isDesktopXl || isDesktop2xl) && <br />}{" "}
+          디자인과 개발 기술을 결합하여 완성도 높은 결과물을 구현하는 프론트엔드
+          개발자로 성장하고자 합니다.
         </p>
       </div>
       <div className="w-full grid grid-rows-[712px_308px_228px] px-4 md:grid-cols-2 md:grid-rows-[392px_308px] gap-4 max-w-[1440px] md:px-8">
